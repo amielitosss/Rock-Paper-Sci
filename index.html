@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="This is a website">
+    <title>Javascript Restudy - Rock PAPER Sci game v1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <p>Rock Paper Scissors</p>
+
+    <button onclick="playGame('Rock')">Rock</button>
+
+    <button onclick="playGame('Paper')">Paper</button>
+
+    <button onclick="playGame('Scissors');">Scissors</button>
+
+    <p class="js-result"></p>
+
+    <p class="js-moves"></p>
+
+    <p  class="js-score"></p>
+
+    <button onclick="
+     score.wins = 0;
+     score.loses = 0;
+     score.ties = 0;
+     localStorage.removeItem('score');
+     updateScoreElement();
+    ">Reset Score</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
