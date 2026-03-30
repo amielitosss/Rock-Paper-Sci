@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="This is a website">
-    <title>Javascript Restudy - Rock PAPER Sci game v1</title>
+    <title>Javascript Project- Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <p>Rock Paper Scissors</p>
 
-    <button onclick="playGame('Rock')">Rock</button>
+    <p class="title">Rock Paper Scissors</p>
 
-    <button onclick="playGame('Paper')">Paper</button>
+    <div class="buttons">
 
-    <button onclick="playGame('Scissors');">Scissors</button>
+    <button onclick="playGame('Rock')" class="move-button"><img src="assets/images/rock-emoji.png" alt="Rock" class="move-icon"></button>
 
-    <p class="js-result"></p>
+    <button onclick="playGame('Paper')" class="move-button"><img src="assets/images/paper-emoji.png" class="move-icon" alt="Paper"></button>
 
-    <p class="js-moves"></p>
+    <button onclick="playGame('Scissors');" class="move-button"><img src="assets/images/scissors-emoji.png" class="move-icon" alt="Scissors"></button>
 
-    <p  class="js-score"></p>
+    </div>
+
+    <p class="js-result result">Result</p>
+
+    <p class="js-moves "></p>
+
+    <p  class="js-score score"></p>
 
     <button onclick="
      score.wins = 0;
@@ -30,7 +35,7 @@
      score.ties = 0;
      localStorage.removeItem('score');
      updateScoreElement();
-    ">Reset Score</button>
+    " class="reset-score-button">Reset Score</button>
 
     <script src="script.js"></script>
 

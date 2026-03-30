@@ -68,7 +68,7 @@
 
    document.querySelector('.js-result').innerHTML = result;
 
-   document.querySelector('.js-moves').innerHTML = `You picked "${playerMove}" -  Computer picked "${computerMove}" `;
+   document.querySelector('.js-moves').innerHTML = `You<img src="assets/images/${playerMove}-emoji.png" class="move-icon"><img src="assets/images/${computerMove}-emoji.png" class="move-icon">Computer `;
 
     }
 
