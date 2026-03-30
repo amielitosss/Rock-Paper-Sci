@@ -21,32 +21,32 @@
 
     let result = '';
 
-    if (playerMove === 'Scissors'){
-        if (computerMove === 'Rock'){
+    if (playerMove === 'scissors'){
+        if (computerMove === 'rock'){
         result = 'You Lose!';
-    } else if (computerMove === 'Paper'){
+    } else if (computerMove === 'paper'){
         result = 'You Win!';
-    } else if (computerMove === 'Scissors'){
+    } else if (computerMove === 'scissors'){
         result = 'Tie.';
     }
-    } else if (playerMove === 'Paper'){
+    } else if (playerMove === 'paper'){
     const computerMove = pickComputerMove();
 
-    if (computerMove === 'Rock'){
+    if (computerMove === 'rock'){
         result = 'You Win!';
-    } else if (computerMove === 'Paper'){
+    } else if (computerMove === 'paper'){
         result = 'Tie.';
-    } else if (computerMove === 'Scissors'){
+    } else if (computerMove === 'scissors'){
         result = 'You Lose!';
     }
-    } else if (playerMove === 'Rock'){
+    } else if (playerMove === 'rock'){
     const computerMove = pickComputerMove();
 
-    if (computerMove === 'Rock'){
+    if (computerMove === 'rock'){
         result = 'Tie.';
-    } else if (computerMove === 'Paper'){
+    } else if (computerMove === 'paper'){
         result = 'You Lose!';
-    } else if (computerMove === 'Scissors'){
+    } else if (computerMove === 'scissors'){
         result = 'You Win!';
     }
 
