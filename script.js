@@ -91,3 +91,20 @@ document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Loses: ${s
 
             return computerMove;
         }
+
+let intervalId;
+let isAutoPlaying = false;
+
+ function autoPlay(){
+      if(isAutoPlaying === false){
+        intervalId = setInterval(() => {
+        playGame(pickComputerMove());
+        }, 1000);
+        document.querySelector('.js-auto').innerHTML = "Stop Auto Play";
+        isAutoPlaying = true;
+    } else {
+        clearInterval(intervalId);
+        document.querySelector('.js-auto').innerHTML = "Auto Play";
+        isAutoPlaying = false;
+    }
+}

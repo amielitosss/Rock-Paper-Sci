@@ -30,6 +30,7 @@
 
     <p  class="js-score score"></p>
 
+    <div class="button-group">
     <button onclick="
      score.wins = 0;
      score.loses = 0;
@@ -37,6 +38,9 @@
      localStorage.removeItem('score');
      updateScoreElement();
     " class="reset-score-button">Reset Score</button>
+
+    <button onclick="autoPlay()" class="js-auto auto-button">Auto play</button>
+    </div>
 
     <script src="script.js"></script>
 
